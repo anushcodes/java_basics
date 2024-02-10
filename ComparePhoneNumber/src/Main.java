@@ -19,6 +19,8 @@ public class Main {
         User user = new User(name, userName, password, phoneNumber);
         User user2 = new User(name2, userName2, password2, phoneNumber2);
 
-        System.out.println(user.comparePhoneNumber(user2));
+        //System.out.println(user.comparePhoneNumber(user2));
+        String answer = user.comparePhoneNumber(user2)?"Same Users":"Different Users";
+        System.out.println(answer);
     }
 }
