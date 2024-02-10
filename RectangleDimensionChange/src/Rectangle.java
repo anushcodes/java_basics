@@ -24,18 +24,21 @@ public class Rectangle {
     }
 
     Rectangle dimensionChange(Integer newDimension){
-        this.setLength(this.getLength()*newDimension);
+        /*this.setLength(this.getLength()*newDimension);
         this.setWidth(this.getWidth()*newDimension);
         if(this instanceof Rectangle){
             return this;
         }
-        return null;
+        return null;*/
+
+        Rectangle newRectangle = null;
+        newRectangle = new Rectangle(this.getLength()*newDimension,this.getWidth()*newDimension);
+        return newRectangle;
     }
 
     public void display(){
         System.out.println("Rectangle Dimension\nLength:"+length);
         System.out.println("Width:"+width);
-        System.out.println("Area of the Rectangle:"+area());
     }
 
 }

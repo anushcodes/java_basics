@@ -9,13 +9,17 @@ public class Main {
 
         Rectangle rectangle = new Rectangle(length, width);
         rectangle.display();
+        System.out.println("Area of the Rectangle:"+rectangle.area());
 
         System.out.println("Enter the new dimension");
         Integer newDimension = scanner.nextInt();
         scanner.close();
-        
-        rectangle.dimensionChange(newDimension);
 
-        rectangle.display();
+        Rectangle newRectangle = rectangle.dimensionChange(newDimension);
+        if(newRectangle instanceof Rectangle){
+            newRectangle.display();
+            System.out.println("Area of the Rectangle:"+newRectangle.area());
+
+        }
     }
 }
