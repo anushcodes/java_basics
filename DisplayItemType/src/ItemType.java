@@ -23,7 +23,9 @@ public class ItemType {
     }
     
     public void display(){
-        System.out.println("Item type details\nName : "+this.name+"\nCostPerDay : "+this.costPerDay+"\nDeposit : "+this.deposit);
+        System.out.println("Item type details\nName : "+this.name);
+        System.out.printf("CostPerDay : %.2f\n",this.costPerDay);
+        System.out.printf("Deposit : %.2f\n",this.deposit);
     }
     
 }
